@@ -4,10 +4,13 @@
 
     switch ($erro) {
         case 1:
-            echo "Usuário ou senha inválidos";
+            echo "Usuário ou senha inválidos😒";
             break;
         case 2:
-            echo "Usuário não autenticado";
+            echo "Usuário não autenticado 😠";
+            break;
+        case 3:
+            echo "Saiu do sistema";
             break;
     }
 ?>
