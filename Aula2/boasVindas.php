@@ -1,16 +1,18 @@
 <?php
 
 require('verificaAutenticacao.php');
+
 //ola
 echo 'Login efetuado com sucesso';
-
-$senha_cripto = password_hash(123, PASSWORD_BCRYPT, [
-    'cost' => 11,
-]);
-echo $senha_cripto;
-die();
-
 ?>
+
 <P>
+    <?php
+        if ($_SESSION['admin']) {
+            ?>
+            <a href="usuarios.php">Usuários</a>
+            <?php
+        }
+    ?>
     <a href="logout.php">Sair</a>
 </P>
